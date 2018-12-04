@@ -1,0 +1,73 @@
+D:/Ahmed/ppi/PortCu.v {1 {vlog -work work -stats=none D:/Ahmed/ppi/PortCu.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module portcu
+
+Top level modules:
+	portcu
+
+} {} {}} D:/Ahmed/ppi/DataBusBuffer.v {1 {vlog -work work -stats=none D:/Ahmed/ppi/DataBusBuffer.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module databusbuffer
+
+Top level modules:
+	databusbuffer
+
+} {} {}} D:/Ahmed/ppi/PortA.v {1 {vlog -work work -stats=none D:/Ahmed/ppi/PortA.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module porta
+
+Top level modules:
+	porta
+
+} {} {}} D:/Ahmed/ppi/ppi8255a.v {1 {vlog -work work -stats=none D:/Ahmed/ppi/ppi8255a.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module controllogic
+-- Compiling module databusbuffer
+-- Compiling module porta
+-- Compiling module portb
+-- Compiling module portcu
+-- Compiling module portcl
+-- Compiling module PPI8255A
+
+Top level modules:
+	PPI8255A
+
+} {} {}} D:/Ahmed/ppi/controllogic.v {1 {vlog -work work -stats=none D:/Ahmed/ppi/controllogic.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module controllogic
+
+Top level modules:
+	controllogic
+
+} {} {}} D:/Ahmed/ppi/PortB.v {1 {vlog -work work -stats=none D:/Ahmed/ppi/PortB.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module portb
+
+Top level modules:
+	portb
+
+} {} {}} D:/Ahmed/ppi/includes.v {1 {vlog -work work -stats=none D:/Ahmed/ppi/includes.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module controllogic
+-- Compiling module databusbuffer
+-- Compiling module porta
+-- Compiling module portb
+-- Compiling module portcu
+-- Compiling module portcl
+
+Top level modules:
+	controllogic
+	databusbuffer
+	porta
+	portb
+	portcu
+	portcl
+
+} {} {}} D:/Ahmed/ppi/PortCl.v {1 {vlog -work work -stats=none D:/Ahmed/ppi/PortCl.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module portcl
+
+Top level modules:
+	portcl
+
+} {} {}}

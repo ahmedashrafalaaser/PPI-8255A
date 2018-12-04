@@ -1,0 +1,30 @@
+
+
+module porta(PA,internaldatabus,control,controlword);
+	inout [7:0]PA,internaldatabus;
+	input[7:0] controlword;
+	input [5:0]control;
+	
+	/*
+	wire nCs,nRe,nWr,Reset;
+	wire [1:0]A;
+	assign nCs=control[5];
+	assign nRe=control[4];
+	assign nWr=control[3];
+	assign Reset=control[2];
+	assign A={control[1:0]};*/
+
+	///////////////////
+	wire [7:0]PAin;
+	reg [7:0]PAout;
+	assign  PA=(control==6'b010000)?PAout:8'hzz;
+	assign  PAin=PA;
+	assign internaldatabus=(control==6'b001000)?PAin:8'hzz;
+	
+always@(internaldatabus)
+begin 		
+PAout<=internaldatabus;
+end
+	
+
+endmodule 

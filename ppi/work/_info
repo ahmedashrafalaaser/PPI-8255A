@@ -1,0 +1,180 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Ahmed/PPI-C.O-Project/codes
+vcontrollogic
+Z0 !s110 1543926405
+!i10b 1
+!s100 m8LViOo]hkoSR3FAjRMVa2
+Ihza4HX5R6ci8A?>MN9bW:2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/Ahmed/ppi
+w1543874445
+8controllogic.v
+Fcontrollogic.v
+L0 2
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z4 !s108 1543926405.000000
+Z5 !s107 PortCl.v|PortCu.v|PortB.v|PortA.v|DataBusBuffer.v|controllogic.v|D:/Ahmed/ppi/includes.v|
+Z6 !s90 -reportprogress|300|-work|work|-stats=none|D:/Ahmed/ppi/includes.v|
+!s101 -O0
+!i113 1
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vdatabusbuffer
+R0
+!i10b 1
+!s100 <NEn2jAlI0kVbQ79B?ZMc0
+I7Mh5iiQgR9HnB]2W3iXbm0
+R1
+R2
+w1543920935
+8DataBusBuffer.v
+FDataBusBuffer.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+vporta
+R0
+!i10b 1
+!s100 h_8AG`e_mdQZCEQ1V<zc>1
+IeXCg2lB;O^W_CA`8n6hd81
+R1
+R2
+w1543921078
+8PortA.v
+FPortA.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+vportb
+R0
+!i10b 1
+!s100 WXh6HEP5_h>G:fO@D<]0S2
+IFL9O`>9]1>NKQKn7kePfY0
+R1
+R2
+w1543921092
+8PortB.v
+FPortB.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+vPortB
+!s110 1543876931
+!i10b 1
+!s100 Z`FTIVN6lc?NBJLji_n420
+IZ<;EiC53_eGN`J:AhZV:K3
+R1
+R2
+w1543876929
+8D:/Ahmed/ppi/PortB.v
+FD:/Ahmed/ppi/PortB.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1543876931.000000
+!s107 D:/Ahmed/ppi/PortB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Ahmed/ppi/PortB.v|
+!s101 -O0
+!i113 1
+R7
+n@port@b
+vportcl
+!s110 1543926411
+!i10b 1
+!s100 HdBazBimBNN4RM=`1iHJJ0
+I_ZzBY9D?7Lj5Aae2TCQ4:0
+R1
+R2
+w1543926309
+8D:/Ahmed/ppi/PortCl.v
+FD:/Ahmed/ppi/PortCl.v
+L0 4
+R3
+r1
+!s85 0
+31
+!s108 1543926411.000000
+!s107 D:/Ahmed/ppi/PortCl.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Ahmed/ppi/PortCl.v|
+!s101 -O0
+!i113 1
+R7
+vportcu
+!s110 1543926415
+!i10b 1
+!s100 A_o?3MN_Vom5Y?46G=eiY2
+If5]kNS_NRA57G5:aGg^L30
+R1
+R2
+w1543926369
+8D:/Ahmed/ppi/PortCu.v
+FD:/Ahmed/ppi/PortCu.v
+L0 4
+R3
+r1
+!s85 0
+31
+!s108 1543926414.000000
+!s107 D:/Ahmed/ppi/PortCu.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Ahmed/ppi/PortCu.v|
+!s101 -O0
+!i113 1
+R7
+vPPI8255A
+!s110 1543926399
+!i10b 1
+!s100 _3Y9^BPln]nbjG[Y@3Aef2
+I9za?9U7^kg9TSTb>4?<>c0
+R1
+R2
+w1543926397
+8D:/Ahmed/ppi/ppi8255a.v
+FD:/Ahmed/ppi/ppi8255a.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1543926399.000000
+!s107 PortCl.v|PortCu.v|PortB.v|PortA.v|DataBusBuffer.v|controllogic.v|includes.v|D:/Ahmed/ppi/ppi8255a.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Ahmed/ppi/ppi8255a.v|
+!s101 -O0
+!i113 1
+R7
+n@p@p@i8255@a
