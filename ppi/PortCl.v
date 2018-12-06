@@ -7,6 +7,7 @@ module portcl(PCl,PD,control,controlword);
 	input[7:0] controlword;
 	input [5:0]control;
 	
+	
 	/*
 	wire nCs,nRe,nWr,Reset;
 	wire [1:0]A;
@@ -17,25 +18,33 @@ module portcl(PCl,PD,control,controlword);
 	assign A={control[1:0]};*/
 
 	///////////////////
+	reg [2:0]selectedport;
+
+	/////
+
+
+
+
 	wire [3:0]PClin;
 	reg [3:0]PClout;
-	assign selectedport={controlword[3:1]};
-	assign PCl=(controlword==8'b0xxx_xxxx)?PClout  :4'hz;
-	assign  PCl=(control==6'b010010&&controlword==8'b1xxxx0x0)?PClout:4'hz;
+													    										  
+	
+	assign PCl=(controlword[7]==0||control==6'b010010&&controlword==8'b1xxxx0x0)?PClout  :4'hz;	
 	assign  PClin=PCl;
 	assign PD=(control==6'b001010&&controlword==8'b1xxxx0x1)?{(4'hz),PClin}:8'hzz;
 	
-always@(PD)
-begin 		
+always@(PD,controlword)
+begin 
+	   
+	if(controlword[7]==1)
+		begin
 PClout<={PD[3:0]};
-if (controlword==8'b0xxx_xxxx&&control==6'bxxx0xx)
-begin
+end
+else if (controlword[7]==0&&control[2]==0)
+begin  
+	selectedport={controlword[3:1]};	//for BSR mode 
 if(selectedport<4)
- PClout[selectedport] =controlword[0]; //set or no the selected pin
-
-
+ PClout[selectedport] <= controlword[0]; //set or no the selected pin
 end
 end
-	
-
-endmodule 
+endmodule  
