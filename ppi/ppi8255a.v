@@ -70,7 +70,14 @@ module test bench ();
       
       PortD =8'b10000011;
       #300
-      
+    end
+  initial 
+    
+     nCs =0;
+      reset = 0 ;
+      nWr = 0;
+      nRe = 1 ; 
+      A = 2'b11 ;
   // test case 2
   
   // test case 3 
