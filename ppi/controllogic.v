@@ -6,7 +6,7 @@ module controllogic(nCs,nRe,nWr,Reset,A,control);
 	
 
 
-	initial
+	always@(nCs,nRe,nWr,Reset,A)
 		begin 
 	 		control={nCs,nRe,nWr,Reset,A[1:0]};
 		end

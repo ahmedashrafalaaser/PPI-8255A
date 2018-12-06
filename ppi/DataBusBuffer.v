@@ -16,7 +16,7 @@ module databusbuffer(PortD,control,controlword);
 	assign Reset=control[2];
 	assign A={control[1:0]};*/
 
-	initial 
+always@(PortD,control) 
 begin 
 if(control==6'b010011)
 controlword<=PortD;
