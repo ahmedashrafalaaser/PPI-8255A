@@ -14,15 +14,15 @@ module portb(PB,PD,control,controlword);
 	assign A={control[1:0]};*/
 
 	///////////////////
-	wire [7:0]PBin;
+	reg [7:0]PBin;
 	reg [7:0]PBout;
-	assign  PB=(control==6'b010001&&controlword==8'b1xxx_x00x)?PBout:8'hzz;
-	assign  PBin=PB;
-	assign PD=(control==6'b001001&&controlword==8'b1xxx_x01x)?PBin:8'hzz;
+	assign  PB=(control==6'b010001&&controlword[7]==1&&controlword[2:1]==2'b00)?PBout:8'hzz;
+	assign PD=(control==6'b001001&&controlword[7]==1&&controlword[2:1]==2'b01)?PBin:8'hzz;
 	
 always@(PD)
 begin 		
 PBout<=PD;
+PBin<=PB;
 end
 	
 

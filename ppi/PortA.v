@@ -15,15 +15,15 @@ module porta(PA,PD,control,controlword);
 	assign A={control[1:0]};*/
 
 	///////////////////
-	wire [7:0]PAin;
+	reg [7:0]PAin;
 	reg [7:0]PAout;
-	assign  PA=(control==6'b010000&&controlword==8'b1000xxxx)?PAout:8'hzz;
-	assign  PAin=PA;
-	assign PD=(control==6'b001000&&controlword==8'b1001xxxx)?PAin:8'hzz;
+	assign  PA=(control==6'b010000&&controlword[7:4]==4'b1000)?PAout:8'hzz;
+	assign PD=(control==6'b001000&&controlword[7:4]==4'b1001)?PAin:8'hzz;
 	
 always@(PD)
 begin 		
 PAout<=PD;
+PAin<=PA;
 end
 	
 
